@@ -1,22 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Search from "./Search";
+import index from "./index";
 
 function App() {
-	return (
-		<div>
-			<div className="container">
-				<h1>Weather app</h1>
-
-				<Search />
-			</div>
-			<div class="footer">
-				<footer>
-					<a href="https://github.com/LaurieKD/weather-app-react">Open-source code</a> by Laurie Kranendonk
-				</footer>
-			</div>
-		</div>
-	);
+	return <index />;
 }
 
 export default App;
