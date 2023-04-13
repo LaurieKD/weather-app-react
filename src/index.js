@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Search from "./Search";
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,18 +13,7 @@ import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<div>
-			<div className="container">
-				<h1>Weather app</h1>
-
-				<Search />
-			</div>
-			<div class="footer">
-				<footer>
-					<a href="https://github.com/LaurieKD/weather-app-react">Open-source code</a> by Laurie Kranendonk
-				</footer>
-			</div>
-		</div>{" "}
+		<App />
 	</React.StrictMode>
 );
 
