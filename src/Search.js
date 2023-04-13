@@ -38,29 +38,60 @@ function Search() {
 	}
 
 	let form = (
-		<form
-			className="search mb-4"
-			onSubmit={handleSubmit}
-		>
-			<div class="row">
-				<div class="col-9">
-					<input
-						type="input"
-						placeholder="Search for a city"
-						onChange={updateCity}
-						onClick={updateLoaded}
-						className="form-control"
-					/>
+		<div>
+			<form
+				className="search mb-4"
+				onSubmit={handleSubmit}
+			>
+				<div class="row">
+					<div class="col-9">
+						<input
+							type="input"
+							placeholder="Search for a city"
+							onChange={updateCity}
+							onClick={updateLoaded}
+							className="form-control"
+						/>
+					</div>
+					<div class="col-3">
+						<input
+							type="submit"
+							value="Search"
+							className="btn btn-primary w-100"
+						/>
+					</div>
 				</div>
-				<div class="col-3">
-					<input
-						type="submit"
-						value="Search"
-						className="btn btn-primary"
-					/>
+			</form>
+			<div class="row">
+				<div class="col-7">
+					<h2 id="city">The Hague</h2>
+					<ul class="info-block">
+						<li>Last update:</li>
+						<li>Current condition:</li>
+						<li>Humidity:</li>
+						<li>Wind:</li>
+					</ul>
+				</div>
+				<div class="col-5">
+					<div class="d-flex weather-temperature">
+						<img
+							src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+							alt="sunny"
+							id="icon"
+							class="top-icon"
+						/>
+
+						<div>
+							<span
+								id="temperature"
+								class="current-temperature"
+							></span>
+							<span class="units">20°C</span>
+						</div>
+					</div>
 				</div>
 			</div>
-		</form>
+		</div>
 	);
 
 	if (loaded) {

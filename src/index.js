@@ -18,6 +18,11 @@ root.render(
 
 			<Search />
 		</div>
+		<div class="footer">
+			<footer>
+				<a href="https://github.com/LaurieKD/weather-app-react">Open-source code</a> by Laurie Kranendonk
+			</footer>
+		</div>
 	</React.StrictMode>
 );
 
