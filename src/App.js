@@ -1,13 +1,21 @@
-import "./App.css";
 import Search from "./Search";
+
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import "./App.css";
 
 function App() {
 	return (
 		<div>
 			<div className="container">
-				<h1>Weather app</h1>
+				<div className="weather-app">
+					<h1>Weather app</h1>
 
-				<Search />
+					<Search />
+				</div>
 			</div>
 			<div class="footer">
 				<footer>
