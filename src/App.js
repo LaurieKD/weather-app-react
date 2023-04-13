@@ -2,7 +2,11 @@ import "./App.css";
 import index from "./index";
 
 function App() {
-	return <index />;
+	return (
+		<div>
+			<index />
+		</div>
+	);
 }
 
 export default App;
